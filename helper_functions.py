@@ -4,6 +4,7 @@ def timestamp_offset(current_timestamp, offset_hours):
     args: current_timestamp-date: string format'2026-01-30T14:00', offset_ours: int number of hours for datetime to be offset.
     returns: offset timestamp in string format'2026-01-30T14:00'
     """
+    import datetime as dt
     year = int(current_timestamp[:4])
     month = int(current_timestamp[5:7])
     day = int(current_timestamp[8:10])
